@@ -34,13 +34,13 @@ func (s Sphere) SurfaceArea() float64 {
 	return 2 * math.Pi * math.Pow(s.radius, 2)
 }
 
-// YOUR CODE HERE: Define a Solid interface
+// Define a Solid interface
 type Solid interface {
 	Volume() float64
 	SurfaceArea() float64
 }
 
-// YOUR CODE HERE: Revise PrintInfo to accept a parameter
+// PrintInfo accepts a parameter
 // that satisfies the Solid interface
 func PrintInfo(s Solid) {
 	fmt.Println(s)
